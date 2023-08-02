@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*Upper part and watermark*/
+.upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+}
+.upper img {
+    margin-top: 200px;
+    max-width: 100%;
+    height: auto;
+    width: 65px;
+}
+.upper h3{
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.upper p{
+    font-family: sans-serif;
+}
+.salarySlip p{
+    font-family: sans-serif;
+    color: rgb(64, 156, 247);
+    text-decoration: underline;
+    font-size: 45px;
+}
+.salarySlip h5{
+    font-family: sans-serif;
+    color: rgb(72, 255, 151);
+    font-size: 30px;
+    margin-left: 12px;
+}
+.upper::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 320px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./image\ \(2\).png') center center no-repeat;
+    opacity: 0.06;
+    pointer-events: none;
+}
+/*Tables*/
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 50%;
+    margin-top: 200px;
+    border: 2px solid black;
+    margin-left: 380px;
+}
+td {
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left;
+}
+.Colored{
+    background-color: #d9e2f3;
+}
+.t2 table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 50%;
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-left: 380px;
+}
+.t2 td{
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left;
+}
+.t2 th{
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.green{
+    background-color: #c5e0b3;
+}
+.orange{
+    background-color: #f7caac;
+}
+/*Last table*/
+.t3 table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 50%;
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-left: 380px;
+}
+.t3 td{
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left;
+}
+.t3 th{
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Note*/
+.note{
+    margin-left: 380px;
+}
+/* Media Query for screens up to 500px */
+@media (max-width: 500px) {
+    .upper img {
+        margin-top: 20px;
+    }
+    .upper h3 {
+        font-size: 18px;
+    }
+    .upper p {
+        font-size: 12px;
+    }
+    .salarySlip p {
+        font-size: 24px;
+    }
+    .salarySlip h5 {
+        font-size: 18px;
+    }
+    .upper::before {
+        margin-top: 150px;
+    }
+    table {
+        width: 100%;
+        margin-left: 0;
+    }
+    .t1 td,
+    .t2 td,
+    .t3 td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .t2 th,
+    .t3 th {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .table-container {
+        padding: 10px;
+    }
+    .note {
+        margin-left: 0;
+    }
+}
